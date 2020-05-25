@@ -302,6 +302,7 @@
             this.dgvUsers.Name = "dgvUsers";
             this.dgvUsers.Size = new System.Drawing.Size(427, 342);
             this.dgvUsers.TabIndex = 23;
+            this.dgvUsers.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvUsers_CellContentClick);
             this.dgvUsers.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvUsers_RowHeaderMouseClick);
             // 
             // txtSearch
@@ -329,7 +330,7 @@
             this.btnAdd.BackColor = System.Drawing.Color.ForestGreen;
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.Location = new System.Drawing.Point(102, 466);
+            this.btnAdd.Location = new System.Drawing.Point(157, 466);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(163, 32);
             this.btnAdd.TabIndex = 26;
@@ -342,7 +343,7 @@
             this.btnUpdate.BackColor = System.Drawing.Color.LawnGreen;
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdate.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdate.Location = new System.Drawing.Point(294, 466);
+            this.btnUpdate.Location = new System.Drawing.Point(349, 466);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(163, 32);
             this.btnUpdate.TabIndex = 27;
@@ -355,7 +356,7 @@
             this.btnDelete.BackColor = System.Drawing.Color.IndianRed;
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDelete.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.Location = new System.Drawing.Point(490, 466);
+            this.btnDelete.Location = new System.Drawing.Point(545, 466);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(163, 32);
             this.btnDelete.TabIndex = 28;

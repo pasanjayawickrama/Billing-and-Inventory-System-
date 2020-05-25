@@ -20,7 +20,7 @@ namespace BillingSystem.UI
         }
 
         loginBLL l = new loginBLL();
-        loginDAL dal = new loginDAL();
+        LoginDAL dal = new LoginDAL();
 
         public static String loggedIn;
 

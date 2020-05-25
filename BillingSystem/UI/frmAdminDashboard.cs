@@ -40,5 +40,17 @@ namespace BillingSystem
         {
             lblLoggedInUser.Text = frmLogin.loggedIn;
         }
+
+        private void categoryToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmCategories categories = new frmCategories();
+            categories.Show();            
+        }
+
+        private void productsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmProducts products = new frmProducts();
+            products.Show();
+        }
     }
 }

@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace BillingSystem.DataAccessLayer
 {
-    class loginDAL
+    class LoginDAL
     {
         //String to connect database
         static String myconnstrng = ConfigurationManager.ConnectionStrings["connstrng"].ConnectionString;
