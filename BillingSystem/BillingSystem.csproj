@@ -47,8 +47,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BLL\UserBLL.cs" />
-    <Compile Include="DAL\UserDAL.cs" />
+    <Compile Include="BusinessLogicLayer\loginBLL.cs" />
+    <Compile Include="BusinessLogicLayer\UserBLL.cs" />
+    <Compile Include="DataAccessLayer\loginDAL.cs" />
+    <Compile Include="DataAccessLayer\UserDAL.cs" />
     <Compile Include="UI\frmAdminDashboard.cs">
       <SubType>Form</SubType>
     </Compile>

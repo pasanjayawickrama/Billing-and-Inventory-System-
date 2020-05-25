@@ -112,9 +112,8 @@
             this.lblLoggedInUser.ForeColor = System.Drawing.Color.ForestGreen;
             this.lblLoggedInUser.Location = new System.Drawing.Point(52, 43);
             this.lblLoggedInUser.Name = "lblLoggedInUser";
-            this.lblLoggedInUser.Size = new System.Drawing.Size(133, 17);
+            this.lblLoggedInUser.Size = new System.Drawing.Size(0, 17);
             this.lblLoggedInUser.TabIndex = 9;
-            this.lblLoggedInUser.Text = "Pasan Jayawickrama";
             // 
             // lblUser
             // 
@@ -164,6 +163,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "User Dashboard";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmUserDashboard_FormClosed);
+            this.Load += new System.EventHandler(this.frmUserDashboard_Load);
             this.menuStripTop.ResumeLayout(false);
             this.menuStripTop.PerformLayout();
             this.pnlFooter.ResumeLayout(false);

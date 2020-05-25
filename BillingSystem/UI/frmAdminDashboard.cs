@@ -20,13 +20,25 @@ namespace BillingSystem
 
         private void label1_Click(object sender, EventArgs e)
         {
-
+            //
         }
 
         private void usersToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmUsers user = new frmUsers();
             user.Show();
+        }
+
+        private void frmAdminDashboard_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            frmLogin login = new frmLogin();
+            login.Show();
+            this.Hide();
+        }
+
+        private void frmAdminDashboard_Load(object sender, EventArgs e)
+        {
+            lblLoggedInUser.Text = frmLogin.loggedIn;
         }
     }
 }

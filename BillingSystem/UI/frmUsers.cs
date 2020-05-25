@@ -35,6 +35,8 @@ namespace BillingSystem.UI
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
+            
+
             //Getting data from UI
             u.first_name = txtFirstName.Text;
             u.last_name = txtLastName.Text;
@@ -47,8 +49,12 @@ namespace BillingSystem.UI
             u.user_type = cmbUserType.Text;
 
             u.added_date = DateTime.Now;
-            u.added_by = 1;
 
+            //Getting username of the logged in user
+            String loggeduser = frmLogin.loggedIn;
+            UserBLL usr = dal.GetIdFromUsername(loggeduser);
+            u.added_by = usr.id;
+           
 
             //Inserting data into Database
 

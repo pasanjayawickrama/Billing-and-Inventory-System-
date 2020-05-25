@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BillingSystem.UI;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,18 @@ namespace BillingSystem
         public frmUserDashboard()
         {
             InitializeComponent();
+        }
+
+        private void frmUserDashboard_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            frmLogin login = new frmLogin();
+            login.Show();
+            this.Hide();
+        }
+
+        private void frmUserDashboard_Load(object sender, EventArgs e)
+        {
+            lblLoggedInUser.Text = frmLogin.loggedIn;
         }
     }
 }

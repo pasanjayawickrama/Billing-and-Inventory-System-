@@ -250,5 +250,42 @@ namespace BillingSystem.DAL
 
         #endregion
 
+        #region Getting User ID from Username
+
+        public UserBLL GetIdFromUsername(String username)
+        {
+            UserBLL u = new UserBLL();
+            SqlConnection conn = new SqlConnection(myconnstring);
+            DataTable dt = new DataTable();
+
+            try
+            {
+                String sql = "SELECT id FROM tbl_users WHERE username='"+username+"'";
+
+                SqlDataAdapter adapter = new SqlDataAdapter(sql, conn);
+
+                conn.Open();
+
+                adapter.Fill(dt);
+                if (dt.Rows.Count > 0)
+                {
+                    u.id = int.Parse(dt.Rows[0]["id"].ToString());
+                }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+
+            }
+            finally
+            {
+                conn.Close();
+            }
+            return u;
+
+        }
+
+        #endregion
+
     }
 }
